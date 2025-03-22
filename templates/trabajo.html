@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas UML</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gufffy.css') }}">
+
+    <script>
+        function toggleDiagram(id) {
+            var diagram = document.getElementById(id);
+            diagram.style.display = (diagram.style.display === 'none' || diagram.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>Diagramas UML</h1>
+
+    <button onclick="toggleDiagram('clases')">Diagrama de Clases</button>
+    <div id="clases" class="diagram">
+        <img src="{{ url_for('static', filename='icons/clases.png') }}" alt="Diagrama de Clases">
+    </div>
+
+    <button onclick="toggleDiagram('objetos')">Diagrama de Objetos</button>
+    <div id="objetos" class="diagram">
+        <img src="{{ url_for('static', filename='icons/objetos.png') }}" alt="Diagrama de Objetos">
+    </div>
+
+    <button onclick="toggleDiagram('componentes')">Diagrama de Componentes</button>
+    <div id="componentes" class="diagram">
+        <img src="{{ url_for('static', filename='icons/componente.png') }}" alt="Diagrama de Componentes">
+    </div>
+
+    <button onclick="toggleDiagram('despliegue')">Diagrama de Despliegue</button>
+    <div id="despliegue" class="diagram">
+        <img src="{{ url_for('static', filename='icons/despliegue.png') }}" alt="Diagrama de Despliegue">
+    </div>
+
+    <button onclick="toggleDiagram('paquetes')">Diagrama de Paquetes</button>
+    <div id="paquetes" class="diagram">
+        <img src="{{ url_for('static', filename='icons/paquetes.png') }}" alt="Diagrama de Paquetes">
+    </div>
+
+    <button onclick="toggleDiagram('casosuso')">Diagrama de Casos de Uso</button>
+    <div id="casosuso" class="diagram">
+        <img src="{{ url_for('static', filename='icons/casos_de_uso.png') }}" alt="Diagrama de Casos de Uso">
+    </div>
+
+    <button onclick="toggleDiagram('actividades')">Diagrama de Actividades</button>
+    <div id="actividades" class="diagram">
+        <img src="{{ url_for('static', filename='icons/actividades.png') }}" alt="Diagrama de Actividades">
+    </div>
+
+    <button onclick="toggleDiagram('estados')">Diagrama de Estados</button>
+    <div id="estados" class="diagram">
+        <img src="{{ url_for('static', filename='icons/estado.png') }}" alt="Diagrama de Estados">
+    </div>
+
+    <button onclick="toggleDiagram('secuencia')">Diagrama de Secuencia</button>
+    <div id="secuencia" class="diagram">
+        <img src="{{ url_for('static', filename='icons/secuencia.png') }}" alt="Diagrama de Secuencia">
+    </div>
+
+    <button onclick="toggleDiagram('comunicacion')">Diagrama de Comunicación</button>
+    <div id="comunicacion" class="diagram">
+        <img src="{{ url_for('static', filename='icons/comunicacion.png') }}" alt="Diagrama de Comunicación">
+    </div>
+
+    <h2>Cronograma de Actividades - Scrum</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Semana</th>
+                <th>Actividad</th>
+                <th>Responsable</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Semana 1</td>
+                <td>Inicio del Proyecto y Reunión de Planificación</td>
+                <td>Scrum Master</td>
+                <td>✅ Completado</td>
+            </tr>
+            <tr>
+                <td>Semana 2</td>
+                <td>Definición de Requisitos y Backlog</td>
+                <td>Equipo de Desarrollo</td>
+                <td>🟡 En Proceso</td>
+            </tr>
+            <tr>
+                <td>Semana 3</td>
+                <td>Primer Sprint y Desarrollo Inicial</td>
+                <td>Desarrolladores</td>
+                <td>🔴 Pendiente</td>
+            </tr>
+            <tr>
+                <td>Semana 4</td>
+                <td>Pruebas y Revisión</td>
+                <td>QA y Stakeholders</td>
+                <td>🔴 Pendiente</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

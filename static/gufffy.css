@@ -1,0 +1,132 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones */
+button {
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+
+/* Contenedor de diagramas */
+.diagram {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Imágenes */
+.diagram img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para los títulos */
+h1, h2 {
+    color: #333;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los diagramas */
+.diagram {
+    display: none;
+    margin: 20px auto;
+}
+
+.diagram img {
+    max-width: 80%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    background: white;
+}
+
+/* Estilos para la tabla del cronograma */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Colores para el estado de las actividades */
+td:nth-child(4) {
+    font-weight: bold;
+}
+
+td:contains("✅ Completado") {
+    color: green;
+}
+
+td:contains("🟡 En Proceso") {
+    color: orange;
+}
+
+td:contains("🔴 Pendiente") {
+    color: red;
+}
